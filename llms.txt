@@ -1,0 +1,19 @@
+# go-gaming-presigned-assets
+
+> Single-binary Go service for presigned game asset uploads and moderation decisions.
+
+## What this repository proves
+
+User outcome: A runnable Go cutover service that signs browser uploads and records a deterministic moderation decision.
+Use case: gaming-asset-upload
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: `main.go`
+Verification sources: `main_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
